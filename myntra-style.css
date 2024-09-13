@@ -1,0 +1,137 @@
+.form-control {
+    display: block;
+    width: 600px; /* Set the width you want for the search bar on larger screens */
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-left: 150px; /* Margin to adjust placement as per your layout */
+    height: 35px;
+}
+
+.fa {
+    margin-right: 50px;
+}
+
+.navbar-nav .nav-item {
+    text-align: center;
+    font-size: 15px;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 20px;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.d-flex .form-control {
+    width: 400px; /* Explicitly set the width of the search bar */
+    flex-grow: 0; /* Prevents the search bar from shrinking */
+}
+
+.d-flex .nav-link {
+    margin-left: 10px; /* Space between icons */
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap; /* Ensures icons wrap to the next line if there's not enough space */
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #212529;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .d-flex .form-control {
+        width: 100%; /* Full width search bar */
+        margin-left: 0; /* Remove margin */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack nav links vertically */
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        font-size: 20px;
+    }
+
+    .card img {
+        object-fit: cover; /* Make sure images fill the card space properly */
+    }
+
+    .social-icons a {
+        margin-right: 10px; /* Tighter margin for social icons */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        padding: 8px; /* Reduced padding for smaller screens */
+    }
+
+    .carousel-item img {
+        height: 200px; /* Set a smaller height for carousel images */
+    }
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    color: #212529;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #212529;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons a {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #212529;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer .app-links img {
+    width: 150px;
+    margin-bottom: 15px;
+}
